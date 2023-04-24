@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "nombre": " 2Jonatan",
+      "empresa": "Prueba",
+      "email": "jonathan.torresmald@gmail.com",
+      "telefono": "633276706",
+      "notas": "Prueba de cliente",
+      "id": 1
+    },
+    {
+      "nombre": "ALEJANDRO",
+      "empresa": "Prueba 2",
+      "email": "jonathan.torresmald@gmail.com",
+      "telefono": "633276706",
+      "notas": "Prueba2",
+      "id": 2
+    }
+  ]
+}

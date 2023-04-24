@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout'
 import NuevoCliente, {action as enviarFormulario} from './pages/NuevoCliente'
 import Index, {loader as clientesLoader} from './pages/Index'
-
+import EditarCliente, { loader as editarCliente, action as editarClienteAction } from './components/EditarCliente'
+import {  action as deleteClienteAction } from './components/Cliente';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,6 +21,15 @@ const router = createBrowserRouter([
         path: '/clientes/nuevo',
         element: <NuevoCliente />,
         action: enviarFormulario
+      },{
+        path: '/clientes/:id/editar',
+        element: <EditarCliente />,
+        loader: editarCliente,
+        action: editarClienteAction
+      },
+      {
+        path: 'clientes/:id/eliminar',
+        action: deleteClienteAction
       }
     ]
   }
